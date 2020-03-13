@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>上传</title>
+    <style>
+        body{
+            background-color: pink;
+        }
+        .dad{
+            width: 100vw;
+            height: 100vh;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            margin-top: 6vw;
+        }
+        .son{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            border-color: blue;
+            height: 6vw;
+            width: 20vw;
+        }
+    </style>
+</head>
+<body>
+    <div style="font-size: 5vw; text-align: center; color: rgb(238, 15, 15);">简易服务器</div>
+    <div class="dad">
+        <form action = "http://127.0.0.1:3000/upload" enctype = "multipart/form-data" method = "post">
+            <div class="son"><input type = "file" name = "wenjian" multiple = "multiple"></div>
+            <div class="son"><input type = "submit" value = "上传"></div>
+            </form>
+    </div>
+</body>
+</html>

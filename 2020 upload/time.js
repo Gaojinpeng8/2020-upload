@@ -1,0 +1,10 @@
+var now = new Date();
+var year = now.getFullYear().toFixed(0);
+var mon = now.getMonth().toFixed(0);
+var day = now.getDate().toFixed(0);//得到日期
+var hours = now.getHours().toFixed(0);//得到小时
+var minu = now.getMinutes().toFixed(0);//得到分钟
+var sec = now.getSeconds().toFixed(0);//得到秒
+// var min = now.getMilliseconds().toFixed(0);
+var time = year+mon+day+hours+minu+sec;
+exports.time = time;
